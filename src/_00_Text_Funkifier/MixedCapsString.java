@@ -9,7 +9,21 @@ public class MixedCapsString extends SpecialString{
 	@Override
 	public String funkifyText(String s) {
 		
-		return "";
+	int length = s.length();
+	
+	for(int i = 0; i<length; i++) {
+		if(i%2==1) {
+			
+		}
+		else if(i%2==0) {
+			
+			
+		}
+	}
+		
+		return s;
+		
+		
 	}
 
 }
