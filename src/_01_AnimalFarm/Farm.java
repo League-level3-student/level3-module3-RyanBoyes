@@ -12,27 +12,31 @@ public class Farm extends Animal{
 public static void main(String[] args) {
 		
 	ArrayList<Animal> farm = new ArrayList<Animal>();
-	farm.add(Pig);
-	farm.add(Cow);
-	farm.add(Cow);
-	farm.add(Horse);
-	farm.add(Horse);
-	farm.add(Chicken);
+	
+	farm.add(new Cow());
+	farm.add(new Pig());
+	farm.add(new Pig());
+	farm.add(new Horse());
+	farm.add(new Horse());
+	farm.add(new Chicken());
+	
+	
 	
 	for(int i = 0; i<farm.size(); i++) {
-		System.out.print(farm.get(i));
+		farm.get(i).makeNoise();
+		farm.get(i).eat();
 	}
 	
 }
 
 @Override
-void makeNoise(Animal a) {
+void makeNoise() {
 	// TODO Auto-generated method stub
 	
 }
 
 @Override
-void eat(Animal a) {
+void eat() {
 	// TODO Auto-generated method stub
 	
 	
